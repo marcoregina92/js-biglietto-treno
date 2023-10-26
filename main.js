@@ -1,0 +1,1 @@
+const kilometers = prompt("Quanti km vorresti percorrere?")

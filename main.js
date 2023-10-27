@@ -7,6 +7,7 @@ console.log(finalPrice)
 
 if ( !Number.isFinite(km) && !Number.isFinite(age)) {
     document.getElementById("titolo").innerHTML = `Ops, qualcosa è andato storto.`;
+    console.log(Error)
 }
 else if (age < 18) {
     finalPrice = (finalPrice * 0.8).toFixed(2)
@@ -20,6 +21,6 @@ else if (age > 65) {
 }
 else {
     document.getElementById("titolo").innerHTML = `Costo totale del biglietto:`;
-    document.getElementById("prezzoFinale").innerHTML = `${finalPrice} €`;
+    document.getElementById("prezzoFinale").innerHTML = `${finalPrice.toFixed(2)} €`;
 }
 
